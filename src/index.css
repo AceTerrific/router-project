@@ -2,7 +2,6 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  --lh: 1.4rem;
   line-height: var(--lh);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -74,5 +73,39 @@ h2 {
   border-radius: 10px;
   padding: 8px;
   color: var(--secondary);
+  background-color: var(--primary);
+}
+
+.btn {
+  color: var(--secondary);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border: transparent;
+}
+.btn:hover {
+  box-shadow: 2px 2px 10px black;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  margin: 0 auto;
+}
+.contact input,
+textarea,
+label {
+  width: 100%;
+  padding: 5px;
+  resize: none;
+  font-size: large;
+}
+.about {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.neutral {
   background-color: var(--primary);
 }
