@@ -28,6 +28,10 @@ function About() {
         distinctio? Sit, alias modi dolores accusantium eaque nesciunt accusamus
         aliquam harum.
       </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod delectus
+        porro ipsam ratione optio, nobis earum explicabo dolorum impedit sequi.
+      </p>
     </div>
   );
 }

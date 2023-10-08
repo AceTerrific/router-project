@@ -1,6 +1,6 @@
 function Button({ color, handleClick, children, buttonType }) {
   return (
-    <button type={buttonType} className={color} onClick={handleClick}>
+    <button type={buttonType} className={color + " btn"} onClick={handleClick}>
       {children}
     </button>
   );

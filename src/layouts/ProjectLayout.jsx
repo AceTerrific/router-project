@@ -1,14 +1,18 @@
-import { Outlet } from "react-router";
+import { Outlet, useLocation } from "react-router";
 import { NavLink } from "react-router-dom";
 
 function ProjectLayout() {
+  const location = useLocation();
   return (
     <div>
-      <tab className="tab">
-        <NavLink to="townhouse">Townhouse</NavLink>
-        <NavLink to="condominium">Condominium</NavLink>
-      </tab>
+      <header className="tab">
+        <NavLink to="cocktail">Cocktail</NavLink>
+        <NavLink to="wine">Wine</NavLink>
+      </header>
       <main>
+        <span className="breadcrumbs">{location.pathname}</span>
+        <br />
+        <br />
         <Outlet />
       </main>
     </div>
